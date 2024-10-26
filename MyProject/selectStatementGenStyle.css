@@ -1,0 +1,49 @@
+h2 {
+    font-size: 20px;
+    color: rgb(234, 227, 255);
+    margin-bottom: 10px;
+}
+
+.box {
+    border: 1px solid #901ffa;
+    background:transparent;
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.box-header {
+    background-image: linear-gradient(30deg, #B794F4, #901ffa);
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(234, 227, 255);
+}
+
+.box-content {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(234, 227, 255);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background-color:transparent;
+    color: rgb(234, 227, 255);
+}
+
+th, td {
+    border: 1px solid #901ffa;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-image: linear-gradient(30deg, #B794F4, #901ffa);
+    color: rgb(234, 227, 255);
+}

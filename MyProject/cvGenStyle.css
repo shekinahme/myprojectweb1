@@ -1,0 +1,87 @@
+
+/* Original styles for the containers */
+.info-box, .profile-section {
+    width: 100%; 
+    max-width: 800px; 
+    margin-bottom: 30px; 
+    border: 2px solid #901ffa;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2; /* Ensures proper stacking context above the blur */
+    background-color: transparent; /* Adjust the background color as needed */
+    overflow: hidden; /* Ensures content stays within bounds */
+}
+
+/* Hover effect styles */
+.info-box:hover, .profile-section:hover {
+    transform: scale(1.3); /* Expands the entire container by 30% */
+    width: 100%; /* Keeps the expanded container at the same width as before */
+    max-width: 700px; /* Ensures it doesn't get wider than 800px */
+    padding: 2px;
+    height: 50vh; /* Adjusts height to make it larger by around 50% */
+    margin: auto; /* Centers the expanded box */
+    border-radius: 20px; /* Smooths the corners during expansion */
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3); /* Adds a softer shadow for depth */
+    z-index: 3; /* Keeps it above the blur overlay */
+    overflow-y: auto; /* Allows scrolling inside the container if content exceeds height */
+    max-height: 100vh; /* Prevents the expanded container from exceeding viewport height */
+    background-color: #9602ff;
+}
+
+/* Original styles for content inside the containers */
+.profile-section {
+    text-align: center;
+}
+
+.info-box h2, .profile-section h2 {
+    margin: 0;
+    font-size: 1.3em; /* Adjust as needed to keep size proportional */
+    background-color: #901ffa;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(250, 234, 234);
+}
+
+.info-box p, .info-box ul, .profile-section p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: rgb(234, 227, 255);
+    font-size: 1.1em; /* Adjust the size proportionally if needed */
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #cfefff;
+    overflow: hidden;
+    border: 2px solid #901ffa; 
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease; /* Smooth transition for image size */
+}
+
+.profile-section:hover .profile-picture {
+    width: 195px; /* Adjusted size to match the container scaling */
+    height: 195px; /* Keeps the image proportional */
+}
+
+.profile-picture img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+}
+
+.timeline {
+    border-left: 2px solid #901ffa;
+    padding-left: 15px;
+    margin-top: 10px;
+}

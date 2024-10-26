@@ -1,0 +1,59 @@
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
+    margin: 0; 
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgba(62, 61, 61, 0.9); 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-button {
+    padding: 10px 20px;
+    background-image: linear-gradient(30deg, #5305f0, #B794F4, #901ffa); /* Purple gradient with highlight */
+    background-size: 100% auto; /* Ensure gradient covers the button */
+    color: #fff; /* White text for better contrast */
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px; /* Match the rounded corners from the reference */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-size 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */
+    display: flex;
+    margin-top: 50px;
+}
+
+.home-button:hover {
+    background-position: right center;
+    background-size: 200% auto; /* Expand gradient on hover */
+    animation: pulse512 1.5s infinite; /* Apply the pulse animation */
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #D4A5FF66; /* Initial glow effect using the highlight color */
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(212, 165, 255, 0%); /* Fade out the shadow */
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 165, 255, 0%); /* End with no shadow */
+    }
+}

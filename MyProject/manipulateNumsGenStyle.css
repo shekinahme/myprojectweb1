@@ -1,0 +1,55 @@
+h2 { 
+    text-align: center; 
+    color: rgb(234, 227, 255);
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+    margin-bottom: 40px;
+}
+
+table, th, td { 
+    border: 1px solid #a748ff; 
+    padding: 8px; 
+    text-align: center; 
+    color:rgb(234, 227, 255);
+}
+
+th { 
+    background-image: linear-gradient(30deg, #B794F4, #901ffa);
+}
+
+.form-group { 
+    margin: 20px 0; 
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 5px; 
+    color: rgb(234, 227, 255);
+   
+}
+
+.form-group input { 
+    padding: 8px; 
+    width: 100%; 
+    background-image: linear-gradient(30deg, #B794F4, #b167f7);
+}
+
+button { 
+    padding: 10px 15px; 
+    background-color:  #901ffa;
+    color: rgb(234, 227, 255); 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    display: flex;
+    margin-bottom: 20px;
+}
+
+button:hover { 
+    background-color: #5305f0; 
+    color: rgb(234, 227, 255);
+}
